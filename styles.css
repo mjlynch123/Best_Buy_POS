@@ -1,8 +1,10 @@
-body {
+body,
+html {
     margin: 0;
     padding: 0;
     width: 100vw;
     font-family: "Roboto";
+    overflow-x: hidden;
 }
 
 .container {
@@ -10,29 +12,109 @@ body {
 }
 
 .nav {
-    background-color: #333;
+    background-color: #0a4abf;
     position: absolute;
     top: 0;
     color: white;
-    width: 100%;
+    width: calc(100% - 40px);
     height: 35px;
     padding: 20px;
+    overflow-x: hidden;
+    box-shadow: 0px 5px 10px #888888;
+}
+
+.left-ham {
+    width: 80px;
+    height: 100px;
+    font-size: 40px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.left-ham i {
+    position: absolute;
+    top: 35px;
+    left: 18px;
+}
+
+.service-search {
+    position: absolute;
+    right: 165px;
+    height: 100% !important;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    top: 0px;
+    width: 80px;
+    height: 40px;
+    font-size: 40px;
+
+}
+
+.service-search i {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+}
+
+.user-search {
+    position: absolute;
+    right: 80px;
+    height: 100% !important;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    top: 0px;
+    width: 80px;
+    height: 40px;
+    font-size: 40px;
+}
+
+.user-search i {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+}
+
+.right-ham {
+    width: 50px;
+    font-size: 40px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.left-ham:hover,
+.right-ham:hover,
+.service-search:hover,
+.user-search {
+    cursor: pointer;
 }
 
 .pos {
     height: 100%;
+    overflow-y: hidden;
+    display: flex;
 }
 
-.scanned-product {
+.left {
     width: 30%;
     border: 1px solid;
+    border-top: none;
     height: 100%;
     position: relative;
+    top: 75px;
 }
 
 .total-button {
     position: absolute;
-    bottom: 0;
+    bottom: 75px;
     width: 100%;
     background-color: #f6eb16;
     color: #000;
@@ -40,11 +122,38 @@ body {
     text-align: center;
     letter-spacing: 1px;
     font-size: 20px;
-    border: 1px solid black;
     border-left: none;
     border-right: none;
+    box-shadow: 0px 0px 20px #888 !important;
 }
 
 .total-button h1 {
     margin-bottom: 20px !important;
+}
+
+.product-cost {
+    position: absolute;
+    bottom: 176px;
+    width: 100%;
+    height: 300px;
+    background-color: #e6e6e6;
+    box-shadow: 5px 0px 30px #888 !important;
+}
+
+.right {
+    position: relative;
+    top: 75px;
+    width: 70%;
+    height: calc(100% - 75px);
+
+
+}
+
+.protection-options {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    border-top: 1px solid black;
 }
