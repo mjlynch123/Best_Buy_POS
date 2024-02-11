@@ -7,6 +7,31 @@ html {
     overflow-x: hidden;
 }
 
+.user-search-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 100;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 12px;
+    color: #0a4abf;
+    border: 3px solid;
+    padding: 5px 7px;
+    border-radius: 50%;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
 .container {
     height: 100vh;
 }
