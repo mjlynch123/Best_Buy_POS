@@ -35,6 +35,10 @@ export default function Main() {
         },
     ]
 
+    const userSearch = () => {
+        document.location.href = "/userlookup";
+    }
+
     return (
         <>
             <div className="container">
@@ -47,7 +51,7 @@ export default function Main() {
                         <i className="fa-solid fa-folder-tree"></i>
                     </div>
 
-                    <div className="user-search">
+                    <div className="user-search" onClick={userSearch}>
                         <i className="fa-solid fa-magnifying-glass"></i>
                     </div>
 
